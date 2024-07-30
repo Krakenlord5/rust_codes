@@ -8,6 +8,7 @@ enum Move {
 }
 
 struct Player {
+    name: String,
     hp: i32,
     stamina: i32
 }
@@ -24,10 +25,11 @@ impl Move {
 }
 
 impl Player {
-    fn new() -> Self {
-        Player {
-            hp: 100,
-            stamina: 50
+    fn new(name: &str, hp: i32, stamina: i32) -> Self {
+        return Player {
+            name: name.to_string(),
+            hp: hp,
+            stamina: stamina
         }
     }
 
@@ -36,12 +38,14 @@ impl Player {
     }
 
     fn show_stat(&self) {
-        println!("HP: {}\nStamina: {}", self.hp, self.stamina);
+        println!("Name: {}\nHP: {}\nStamina: {}", self.name, self.hp, self.stamina);
     }
 }
 
 fn main() {
-    let mut player: Player = Player::new();
+    let mut player_1: Player = Player::new("Alex", 100, 50);
+    let mut player_2: Player = Player::new("Jacob", 90, 70);
+
     loop {
         let mut n: String = String::new();
         println!("(1) North (2) South (3) East (4) West (5) byebye");
@@ -66,7 +70,10 @@ fn main() {
         };
 
         n.moving();
-        player.stamina_deduct();
-        player.show_stat();
+        player_1.stamina_deduct();
+        player_2.stamina_deduct();
+
+        player_1.show_stat();
+        player_2.show_stat();
     }
 }
