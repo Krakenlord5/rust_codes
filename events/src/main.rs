@@ -7,6 +7,11 @@ enum Move {
     West
 }
 
+struct Player {
+    hp: i32,
+    stamina: i32
+}
+
 impl Move {
     fn moving(&self) {
         match self {
@@ -18,7 +23,25 @@ impl Move {
     }
 }
 
+impl Player {
+    fn new() -> Self {
+        Player {
+            hp: 100,
+            stamina: 50
+        }
+    }
+
+    fn stamina_deduct(&mut self) {
+        self.stamina -= 1;
+    }
+
+    fn show_stat(&self) {
+        println!("HP: {}\nStamina: {}", self.hp, self.stamina);
+    }
+}
+
 fn main() {
+    let mut player: Player = Player::new();
     loop {
         let mut n: String = String::new();
         println!("(1) North (2) South (3) East (4) West (5) byebye");
@@ -42,6 +65,8 @@ fn main() {
             }
         };
 
-        n.moving()
+        n.moving();
+        player.stamina_deduct();
+        player.show_stat();
     }
 }
