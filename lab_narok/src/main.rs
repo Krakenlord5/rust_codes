@@ -17,7 +17,7 @@ fn main() {
     }
     for i in 0..9 {
         if i == 0 || i == 4 || i == 8 {
-            for j in 0..(4 + "Player 1: ".len() + longest_name) {
+            for _ in 0..(4 + "Player 1: ".len() + longest_name) {
                 print!("*");
             }
             println!();
