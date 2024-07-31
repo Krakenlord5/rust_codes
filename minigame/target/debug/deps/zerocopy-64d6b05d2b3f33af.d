@@ -1,0 +1,10 @@
+/home/krakenlord/Documents/Scripts/rust_codes/events/target/debug/deps/libzerocopy-64d6b05d2b3f33af.rmeta: /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/lib.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/byteorder.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/derive_util.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/post_monomorphization_compile_fail_tests.rs
+
+/home/krakenlord/Documents/Scripts/rust_codes/events/target/debug/deps/libzerocopy-64d6b05d2b3f33af.rlib: /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/lib.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/byteorder.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/derive_util.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/post_monomorphization_compile_fail_tests.rs
+
+/home/krakenlord/Documents/Scripts/rust_codes/events/target/debug/deps/zerocopy-64d6b05d2b3f33af.d: /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/lib.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/byteorder.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/derive_util.rs /home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/post_monomorphization_compile_fail_tests.rs
+
+/home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/lib.rs:
+/home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/byteorder.rs:
+/home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/derive_util.rs:
+/home/krakenlord/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zerocopy-0.6.6/src/post_monomorphization_compile_fail_tests.rs:
