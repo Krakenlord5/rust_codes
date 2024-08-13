@@ -1,5 +1,4 @@
 use std::io;
-
 use crossterm::cursor::{Hide, MoveTo, MoveToColumn, RestorePosition, SavePosition, Show};
 use crossterm::event::KeyCode;
 use crossterm::{execute, terminal};
