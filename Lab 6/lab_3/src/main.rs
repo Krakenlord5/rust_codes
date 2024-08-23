@@ -3,6 +3,23 @@ trait SimpleAnalyzable {
     fn median(&self) -> f64;
 }
 
+impl SimpleAnalyzable for Vec<f64> {
+    fn mean(&self) -> f64 {
+        let mut total: f64 = 0.0;
+        for i in self {
+            total += *i
+        }
+        return (total / self.len() as f64) as f64
+    }
+
+    fn median(&self) -> f64 {
+        if self.len() % 2 == 1 {
+            return self[(self.len() / 2) as usize];
+        } else {
+            return ((self[(self.len() / 2) as usize] + self[(self.len() / 2) as usize + 1]) / 2.0) as f64;
+        }
+    }
+}
 struct SimpleDataSet {
     data: Vec<f64>,
 }
@@ -33,7 +50,6 @@ impl SimpleAnalyzable for SimpleDataSet {
     }
 
     fn median(&self) -> f64 {
-        let median: f64;
         if self.data.len() % 2 == 1 {
             return self.data[(self.data.len() / 2) as usize];
         } else {
